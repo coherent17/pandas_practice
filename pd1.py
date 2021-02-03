@@ -1,7 +1,6 @@
 import pandas as pd
 
 #1. create the series by pandas
-print("1.")
 a=pd.Series([1,2,3,4,5])
 print(a)
 #0    1
