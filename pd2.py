@@ -108,3 +108,24 @@ print(e.loc['b',:])
 #a   1   2   3   4   5
 #b   6   7   8   9  10
 #c  11  12  13  14  15
+print(e.iloc[0,4])  #5
+
+#get all of the a data
+print(e.iloc[0,:])
+#A    1
+#B    2
+#C    3
+#D    4
+#E    5
+#Name: a, dtype: int64
+
+#get the headside of the tailside of the data
+print(e.head(2))
+#   A  B  C  D   E
+#a  1  2  3  4   5
+#b  6  7  8  9  10
+
+print(e.tail(2))
+#    A   B   C   D   E
+#b   6   7   8   9  10
+#c  11  12  13  14  15
