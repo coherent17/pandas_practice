@@ -78,3 +78,33 @@ print(e.values)
 
 print(e.values[0]) #a那列的數據
 #[1 2 3 4 5]
+
+print(e.values[0][2]) #a列第三欄
+#3
+
+#6. using index or the column to get the value
+
+#    A   B   C   D   E
+#a   1   2   3   4   5
+#b   6   7   8   9  10
+#c  11  12  13  14  15
+print(e.loc['b','D'])  #9
+
+print(e.loc['a',['A','C']])
+#A    1
+#C    3
+#Name: a, dtype: int64
+
+print(e.loc['b',:])
+#A     6
+#B     7
+#C     8
+#D     9
+#E    10
+#Name: b, dtype: int64
+
+#using the index and the column number to get the value
+#    A   B   C   D   E
+#a   1   2   3   4   5
+#b   6   7   8   9  10
+#c  11  12  13  14  15
